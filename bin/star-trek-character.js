@@ -1,21 +1,14 @@
+'use strict';
 var Alphabet = require(__dirname + '/../data/pIqaD-klingon-alphabet');
 
-exports.getNameInHexa = function () {
-    //var name = "Uhura";
-    //var name = "chab";
-    var name = "tlHch";
+exports.getNameInHexa = function (name) {
     var hexadecimalName = "";
     var alphabet = Alphabet.alphabet;
     var hexadecimalLetter = "";
     var stack = "";
 
     for (var i = 0; i < name.length;) {
-        var letter = name[i];
-        console.log("Read from name: " + letter);
-        console.log("Read from alphabet: " + alphabet[letter]);
-
-        //hexadecimalLetter = getFromAlphabet(alphabet, letter);
-        letter = "";
+        var letter = "";
         stack = "";
         var j = i;
         var addI = 0;
@@ -35,19 +28,18 @@ exports.getNameInHexa = function () {
                 }
             }
         }
-        console.log("addI " + addI);
+        
         i = i + addI;
 
         if (stack !== "")
             hexadecimalName += stack + " ";
         else {
-            console.log("Invalid input");
             break;
         }
 
     }
 
-    console.log("The hexadecimal value for the name " + name + " is " + hexadecimalName);
+    console.log(hexadecimalName);
 };
 
 function getFromAlphabet(alphabet, letter, index) {
