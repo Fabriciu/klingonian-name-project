@@ -1,4 +1,4 @@
-var Alphabet = require(__dirname + '/../data/pIqaD​-klingon-alphabet');
+var Alphabet = require(__dirname + '/../data/pIqaD-klingon-alphabet');
 
 exports.getNameInHexa = function () {
     var name = "Uhura";
