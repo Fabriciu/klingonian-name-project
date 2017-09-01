@@ -37,5 +37,4 @@ exports.alphabet = {
     "9": { "hexa": "0xF8F9" },
     ".": { "hexa": "0xF8FD" },
     ",": { "hexa": "0xF8FE" }
-    //Falta um símbolo
 };
