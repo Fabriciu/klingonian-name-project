@@ -13,8 +13,9 @@ exports.getNameInHexa = function (name) {
         var j = i;
         var addI = 0;
 
-        if (name[j] === " ") {
+        if (name[j] == ' ') {
             stack = "0x0020";
+            addI = 1;
         } else {
             for (var l = 0; l < 3; l++) {
                 if (name[j] !== undefined) {
