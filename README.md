@@ -12,7 +12,7 @@ Have fun!
 
 ### Code
 
-The code is organized by responsibilities
+The code is organized by features
 
 API handling: api-handler
 <br>Business: star-trek-character
