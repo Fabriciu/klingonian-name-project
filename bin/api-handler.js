@@ -11,7 +11,7 @@ exports.retrieveFromApi = function (characterName) {
 
     request.post({ url: post_url, qs: post_qs }, (error, response, body) => {
         var api_response = JSON.parse(body);
-
+        //The API returns a list of characters and this must be handled in this codes next versions
         if (undefined !== api_response.characters[0]) {
             var uid = api_response.characters[0].uid;
             var get_qs = { uid: uid };
