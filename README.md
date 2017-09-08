@@ -6,7 +6,7 @@ This module will give you a couple things:
 1. Star Trek characters species
 2. Star Trek characters names in hexadecimal
 
-It's built in node, which runs Javascript, which runs in browsers, which are everywhere.
+It's built on node, which runs Javascript, which runs in browsers, which are everywhere.
 
 Have fun!
 
